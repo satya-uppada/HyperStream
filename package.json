@@ -8,5 +8,16 @@
     "dependencies": {
         "express": "^4.17.1",
         "sudo": "^1.0.3"
+    },
+    "environments": {
+    "review": {
+      "addons": [
+        {
+          "plan": "heroku-postgresql:mini",
+          "options": {
+            "extensions": "pg_stat_statements"
+          }
+        }
+        ]
     }
 }

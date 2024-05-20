@@ -1,24 +1,30 @@
 {
-    "name": "node-ex-website",
-    "version": "1.0.0",
-    "description": "",
-    "scripts": {
-        "start": "node index.js"
-    },
-    "dependencies": {
-        "express": "^4.17.1",
-        "sudo": "^1.0.3"
-    },
-    "environments": {
-    "review": {
-      "addons": [
-        {
-          "plan": "heroku-postgresql:mini",
-          "options": {
-            "extensions": "pg_stat_statements"
-          }
-        }
-        ]
-    }
-}
+  "name": "node-js-getting-started",
+  "version": "0.3.0",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "20.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "tape": "^5.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
